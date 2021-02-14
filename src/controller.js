@@ -6,7 +6,7 @@ async function getGeneralData() {
     try {
         const res = await axios.get(`https://oapi.raveos.com/v1/get_workers`, {
             headers: {
-                'X-Auth-Token': ''
+                'X-Auth-Token': `${process.env.AUTH_TOKEN}`
             }
         });
         return res.data;
@@ -22,7 +22,7 @@ async function workerData(generalData) {
         for(const g of generalData) {
             const res = await axios.get(`https://oapi.raveos.com/v1/get_worker_info/${g.id}`, {
                 headers: {
-                    'X-Auth-Token': ''
+                    'X-Auth-Token': `${process.env.AUTH_TOKEN}`
                 }
             });
             
