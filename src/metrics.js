@@ -1,7 +1,7 @@
 const client = require('prom-client');
 const labels = ['id','name','os_version', 'lan_ip', 'wan_ip']
 const infoLabels = ['id','name', 'sw_version','os_build_no','os_kernel','sw_build','gpu_drivers'];
-const mpuLabels = ['id','name', 'memory_total','memory_type', 'vbios'];
+const mpuLabels = ['id','name','rig_name', 'memory_total','memory_type', 'vbios'];
 const cpuLabels = ['name'];
 
 

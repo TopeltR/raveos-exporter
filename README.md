@@ -16,9 +16,9 @@ The point of this exporter is to contact the RaveOS api and export out metrics i
 
 * Git clone the repository 
 * ```npm install``` the packages
-* Create a ```.code``` file in the root of the project
+* Create a ```.env``` file in the root of the project
 * Get API token from RaveOS UI under account -> security (It is hidden below the Auth History)
-* Put the token into ```.code``` file with line ```AUTH_TOKEN=<your-token-here>``` 
+* Put the token into ```.env``` file with line ```AUTH_TOKEN=<your-token-here>``` 
 
 ### Executing program
 
@@ -31,13 +31,15 @@ node index.js
 
 Contributors names and contact info
 
-ex. Rasmus Rüngenen  
-ex. [@TopeltR](https://twitter.com/TopeltR)
+Rasmus Rüngenen  
+[@TopeltR](https://twitter.com/TopeltR)
 
 ## Version History
 
 * 0.1
     * Initial Release
+* 0.2
+    * Fixes and improvements
 
 ## License
 

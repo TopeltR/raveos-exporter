@@ -1,8 +1,7 @@
-const axios = require('axios');
 const express = require('express');
 const port = 8080;
 const app = express();
-const { getMetrics } = require('../RaveOS exporter/src/controller');
+const { getMetrics } = require('./src/controller');
 
   
   
