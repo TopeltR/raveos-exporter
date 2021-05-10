@@ -33,7 +33,8 @@ function makeMetrics(generalWorkers, workerSpecifics) {
                 name: mpu.name,
                 memory_total: mpu.memory_total,
                 memory_type: mpu.memory_type,
-                vbios: mpu.vbios
+                vbios: mpu.vbios,
+                rig_name: ws.name,
             };
 
             // General 
