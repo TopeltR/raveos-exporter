@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "prom-client": "^13.1.0"
+    "prom-client": "^13.1.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "standard-version": "^9.3.0"
   }
 }

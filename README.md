@@ -25,11 +25,11 @@ The point of this exporter is to contact the RaveOS api and export out metrics i
 ```
 node index.js
 ```
+### Debugging
 
+Logs are written to two different files, error and combined, based on the log level. These logs are append based and will not be cleared. 
 
 ## Authors
-
-Contributors names and contact info
 
 Rasmus Rüngenen  
 [@TopeltR](https://twitter.com/TopeltR)

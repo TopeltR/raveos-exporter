@@ -1,6 +1,7 @@
 const axios = require('axios');
 const prometheus = require('./prometheus');
 const client = require('prom-client');
+const { logger } = require('./config');
 
 async function getGeneralData() {
     try {
@@ -11,7 +12,7 @@ async function getGeneralData() {
         });
         return res.data;
     } catch (error) {
-        console.log(error);
+        logger.error(error);
         return {};
     }
 }
@@ -30,8 +31,8 @@ async function workerData(generalData) {
         }
         return result;
     } catch (error) {
+        logger.error(error);
         return [];
-        console.log(error);
     }
 }
 
